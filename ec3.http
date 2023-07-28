@@ -23,26 +23,26 @@
 # Deben desplegar su aplicación en render
 # Al finalizar el examen entregarlo en el siguiente link: https://forms.office.com/r/4E2zr3Kpww
 
-@server = INSERTAR URL DE RENDER ACÁ
-@api = {{server}}/api/ec3
+@server = localhost:8080/api/ec3
+@api = https://jorgemontalvorocio.onrender.com/api/ec3
 
 ################ Categorias: ################
 ###
-GET {{api}}/categorias
+GET https://jorgemontalvorocio.onrender.com/categorys
 ###
-POST {{api}}/categorias
+POST https://jorgemontalvorocio.onrender.com/categorys
 Content-Type: application/json
 
 {"nombre": "Instrumentos de Cuerda"}
 ################ Instrumentos: ################
 ###
-GET {{api}}/instrumentos
+GET https://jorgemontalvorocio.onrender.com/instruments
 ###
-POST {{api}}/instrumentos
+POST https://jorgemontalvorocio.onrender.com/instruments
 Content-Type: application/json
 
-{"nombre": "Guitarra", "categoria": "http://localhost/api/ec3/categorias/1"}
+{"nombre": "Guitarra", "category": "http://localhost/api/ec3/categorys/1"}
 ###
-GET {{api}}/instrumentos/1/categoria
+GET https://jorgemontalvorocio.onrender.com/instruments/1/category
 ###
-GET {{api}}/instrumentos?sort=nombre,desc
+GET https://jorgemontalvorocio.onrender.com/instruments?sort=nombre,desc
